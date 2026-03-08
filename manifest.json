@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Live EQ",
+  "description": "Live equalizer for YouTube and YouTube Music playback.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://music.youtube.com/*"
+  ],
+  "action": {
+    "default_title": "YouTube Live EQ",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://music.youtube.com/*"
+      ],
+      "js": [
+        "content/eq.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-live-eq@local"
+    }
+  }
+}

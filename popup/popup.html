@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Live EQ</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <div class="scanlines" aria-hidden="true"></div>
+      <header class="panel-header">
+        <div>
+          <h1>YouTube Live EQ</h1>
+          <p class="tag">AUDIO CONTROL // 1985</p>
+        </div>
+        <label class="toggle-row" for="enabled">
+          <span>On Air</span>
+          <input id="enabled" type="checkbox" checked />
+        </label>
+      </header>
+
+      <p id="status" class="status">Checking active tab...</p>
+
+      <section class="presets">
+        <button type="button" data-preset="flat">Flat</button>
+        <button type="button" data-preset="bassBoost">Bass Boost</button>
+        <button type="button" data-preset="hyperBass">Hyper Bass</button>
+        <button type="button" data-preset="vocal">Vocal</button>
+        <button type="button" data-preset="smile">Smile</button>
+        <button type="button" data-preset="sparkle">Sparkle</button>
+        <button type="button" data-preset="electronic">Electronic</button>
+        <button type="button" data-preset="classical">Classical</button>
+        <button type="button" data-preset="reset">Reset</button>
+      </section>
+
+      <section id="sliders" class="sliders"></section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
