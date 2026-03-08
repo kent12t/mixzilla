@@ -3,6 +3,11 @@
   "name": "YouTube Live EQ",
   "description": "Live equalizer for YouTube and YouTube Music playback.",
   "version": "1.0.0",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  },
   "permissions": [
     "storage",
     "tabs"
