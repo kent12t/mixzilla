@@ -1,4 +1,4 @@
-# YouTube Live EQ
+# mixzilla
 
 A retro-futuristic 1985-styled Firefox WebExtension that applies a live 5-band Equalizer to YouTube and YouTube Music.
 
@@ -25,15 +25,15 @@ If you don't already have one, create an account on [Mozilla Add-ons (AMO) Devel
 ### 2. Package the Extension
 Compress the contents of the project into a ZIP file. **Do not** zip the folder itself; zip the files *inside* the folder so that `manifest.json` is at the root of the ZIP archive.
 ```bash
-zip -r youtube-live-eq.zip manifest.json content popup icons
+zip -r mixzilla.zip manifest.json content popup icons
 ```
 
 ### 3. Submit for Review
 1. Go to the AMO Developer Hub and click **Submit a New Add-on**.
 2. Choose **On this site** (to list it publicly on the Firefox store).
-3. Upload your `youtube-live-eq.zip` file. The automated linter will check for issues (e.g., manifest errors).
+3. Upload your `mixzilla.zip` file. The automated linter will check for issues (e.g., manifest errors).
 4. Fill out the store listing details:
-   - **Name**: YouTube Live EQ
+   - **Name**: mixzilla
    - **Summary**: Live equalizer for YouTube and YouTube Music playback.
    - **Description**: Add a detailed description of the features, why it requires its permissions (storage for saving settings, host permissions for applying audio processing to youtube.com), and emphasize the retro UI.
    - **Category**: Music & Video, Appearance, or similar.
