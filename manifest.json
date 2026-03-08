@@ -34,7 +34,8 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "mixzilla@local"
+      "id": "mixzilla@local",
+      "data_collection_permissions": []
     }
   }
 }
