@@ -11,7 +11,17 @@ A retro-futuristic 1985-styled Firefox extension for live 5-band Equalizer contr
 - **Persistent Settings**: Auto-saves and reapplies settings on reload/navigation.
 - **Cyberpunk UI**: Neon accents, scanlines, and tactile controls.
 
-## Development Setup
+## Installation
+
+### Official Firefox Add-ons store
+You can find Mixzilla on the official Firefox Add-ons store:
+[Mixzilla on AMO](https://addons.mozilla.org/en-US/firefox/addon/mixzilla/)
+
+> [!IMPORTANT]
+> The extension is currently under review and may not appear in search results yet. For now, users are encouraged to use the **Development Setup / Local Use** method below.
+
+## Development Setup / Local Use
+
 1. Go to `about:debugging#/runtime/this-firefox` in Firefox.
 2. Click **Load Temporary Add-on...**
 3. Select `manifest.json`.
